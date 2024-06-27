@@ -1,0 +1,47 @@
+#message-box{
+	width:300px;
+	height:120px;
+	text-align:center;
+	border:solid 1px #bac0c3;
+	border-radius:5px;
+	box-shadow: 5px 10px 25px 5px #575754;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-left:-150px;
+	margin-top:-60px;
+	z-index:1001;
+	display:none;
+	background:#fff;
+	animation: animationDropCenter 1s;
+}
+
+#message-content{
+	padding:15px;
+}
+
+@keyframes animationDropCenter {
+	0% {
+		top:0%;
+	}
+}
+
+#transparent-bg{
+	position: fixed; 
+	top: 0%; 
+	left: 0%; 
+	width: 100%; 
+	height: 100%; 
+	background:#000;
+	-moz-opacity: 0.30; 
+	opacity: .30; 
+	filter: alpha(opacity=30);
+	z-index: 1000; 
+	-webkit-animation: animateBackground 1s;
+	animation: animateBackground 1s ;
+}
+
+@keyframes animateBackground {
+	from {opacity: 0.8;}
+	to {opacity: 0.30;}
+}
